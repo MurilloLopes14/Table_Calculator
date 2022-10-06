@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Dirt");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik Dirt", "Poppins";
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background: linear-gradient(to bottom right, #b62dc3 0%, #4b08dc 100%);
+  text-align: center;
+  padding: 2rem;
+  color: azure;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+#multiplication_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  color: #222;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin: 0 1rem;
+}
+
+.form_control label {
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+}
+
+.form_control input {
+  margin-bottom: 1rem;
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #333;
+  width: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  font-family: "Poppins";
+}
+
+#multiplication_form input[type="submit"],
+#reload {
+  max-height: 50px;
+  padding: 0.6rem 1.2rem;
+  width: 200px;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+#multiplication_form input[type="submit"]:hover,
+#reload:hover {
+  opacity: 1;
+  filter: brightness(1.2);
+}
+
+#multiplication_operations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  background-color: aliceblue;
+  color: #222;
+  border-radius: 1rem;
+}
+
+#multiplication_operations .row {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 0.5rem;
+  width: 150px;
+}
+
+#multiplication_operations .row:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+#multiplication_operations .result {
+  margin-left: 0.4rem;
+}

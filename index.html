@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/Styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./ASSETS/icons8-matemática-96.png"
+      type="image/x-icon"
+    />
+    <script src="./JS/index.js" defer></script>
+    <title>Table Calculator | JS HTML CSS</title>
+  </head>
+  <body>
+    <h2>Digite o número e confirme para gerar uma tabuada</h2>
+    <form id="multiplication_form">
+      <div class="form_control">
+        <label for="number">Tabuada do:</label>
+        <input type="number" name="number" id="number" placeholder="3" />
+      </div>
+      <div class="form_control">
+        <label for="multiplier">Multiplicar até:</label>
+        <input type="number" name="multiplier" id="multiplier" value="10" />
+      </div>
+      <input type="submit" value="Calcular" />
+    </form>
+    <div id="multiplication_table">
+      <h2 id="multiplication_title">Tabuada do número : <span></span></h2>
+      <div id="multiplication_operations">
+        <p>Informe um número para calcular uma tabuada. . .</p>
+        <!-- <div class="row">
+          <div class="operation">5 x 1 =</div>
+          <div class="result">5</div>
+        </div>
+        <div class="row">
+          <div class="operation">5 x 2 =</div>
+          <div class="result">10</div>
+        </div>
+        <div class="row">
+          <div class="operation">5 x 3 =</div>
+          <div class="result">15</div>
+        </div> -->
+      </div>
+    </div>
+    <div class="reload_page">
+      <button id="reload">Voltar</button>
+    </div>
+  </body>
+</html>
